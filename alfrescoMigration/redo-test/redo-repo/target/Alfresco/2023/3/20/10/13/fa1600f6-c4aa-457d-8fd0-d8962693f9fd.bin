@@ -1,0 +1,34 @@
+
+Kullback­Leibler
+Divergence
+
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Kullback­Leibler Divergence
+
+• Measure�dissimilarity�of�two�probability�distributions,�𝑝 and�𝑞.
+• Since�KLD�is�asymmetric,�it�is�not�a�distance.KL 𝑝||𝑞 = −𝔼!~# ! log 𝑞 𝑥𝑝 𝑥= −-𝑝 𝑥 log 𝑞 𝑥𝑝 𝑥 𝑑𝑥
+
+
+
+DNN�Optimization�using�KL-Divergence
+
+ℒ 𝜃 = −𝔼!~# ! 𝔼$~# $|! log 𝑝& 𝑦|𝑥𝑝 𝑦|𝑥
+𝐷 = 𝑥', 𝑦' '()*
+
+by�Monte-Carlo
+
+ℒ 𝜃 ≈ − 1𝑁 5 𝑘7'()* 7+(), log 𝑝& 𝑦',+|𝑥'𝑝 𝑦',+|𝑥'≈ − 1𝑁7'()* log 𝑝& 𝑦'|𝑥'𝑝 𝑦'|𝑥' , if 𝑘 = 1.
+
+
+
+DNN�Optimization�using�KL-Divergence
+
+ℒ 𝜃 = − 1𝑁)!"#$ log 𝑝% 𝑦!|𝑥!𝑝 𝑦!|𝑥!0𝜃 = argmin%∈' ℒ 𝜃𝜃 ← 𝜃 − 𝛼∇%ℒ 𝜃
+
+

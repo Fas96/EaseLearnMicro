@@ -1,0 +1,21 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+  zipkin:
+    base-url: http://zipkin:9411
+eureka:
+  client:
+    fetch-registry: 'false'
+    register-with-eureka: 'false'
+
+
+logging:
+  level:
+    com:
+        netflix:
+            discovery: DEBUG
+            eureka: DEBUG
+            zuul: DEBUG

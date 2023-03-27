@@ -1,0 +1,63 @@
+
+Manifold�Hypothesis
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+데이터의분포?
+
+• MNIST는 784(28×28)차원의벡터로나타내어진다.
+• 784차원에공간에존재하는데이터
+
+• 샘플들이 uniform 하게분포되어있을까?
+Both values are 0.
+
+Both values are around 255.
+
+
+
+Manifold�Hypothesis
+
+• 고차원공간의샘플들이저차원다양체(manifold)의 형태로분포해있다는가정
+• 따라서다양체를해당차원의공간에mapping할 수있음
+
+고차원공간 저차원공간
+
+
+
+Mapping�to�Lower�Dimensional�Space
+
+• 우리는 3차원의좌표계에살지만, 2차원좌표계로세상을인식한다.
+
+메르카토르도법
+
+
+
+Manifold�Hypothesis
+
+• 고차원공간에서의두점사이의거리는저차원공간으로의맵핑후거리와다르다.
+
+고차원공간 저차원공간
+
+
+
+MNIST�Example
+
+• Samples�in�786�dimension�are�mapped�into�2-D�space.
+
+
+
+MNIST�Example
+
+High�Dimensional�Space Lower�Dimensional�Space
+
+
+
+Non-linear�Dimension�Reduction�Example
+
+• Binary�Classification�in�2-D
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="apigw" />
+        <module name="notification" />
+        <module name="clients" />
+        <module name="amqp" />
+        <module name="fraud" />
+        <module name="eureka-server" />
+        <module name="customer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Customer" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Customer" options="" />
+      <module name="EaseLearnMicro" options="-parameters" />
+      <module name="amqp" options="-parameters" />
+      <module name="apigw" options="-parameters" />
+      <module name="clients" options="-parameters" />
+      <module name="customer" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="fraud" options="-parameters" />
+      <module name="notification" options="-parameters" />
+    </option>
+  </component>
+</project>

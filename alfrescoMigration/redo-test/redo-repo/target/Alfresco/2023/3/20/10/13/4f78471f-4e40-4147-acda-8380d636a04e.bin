@@ -1,0 +1,218 @@
+
+PyTorch Ignite:
+Building�a�Boilerplate
+
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Boilerplate?
+
+• 학습 scheme이비슷할경우, 모델과 dataset을 제외한코드는거의동일함
+• 정작중요한모델을코딩하는시간보다부수적인요소코딩에더많은시간소요
+
+• 따라서모델과 dataset만 갈아끼워재사용가능한코드가있으면좋을것
+
+• 템플릿(Template)을 만들자
+
+
+
+Typical�Model�Training�Procedure
+
+Iteration 시작
+
+Feed-forward
+
+Loss 계산
+
+Back-
+
+propagation
+
+Gradient 
+
+Descent 수행
+
+현재 상태 출력
+
+Iteration 종료
+
+Iteration 시작
+
+Feed-forward
+
+Loss 계산현재 상태 출력
+
+Iteration 종료
+
+Training Validation
+
+Epoch�종료Epoch�시작
+
+Best loss 여부 체크 모델 저장
+
+
+
+Interaction�between�Trainer�and�Others
+
+Training
+
+Validation
+
+Epoch�종료Epoch�시작
+
+Trainer
+
+Train�Set Valid�Set Test�Set
+
+Model
+
+
+
+beforeafter
+
+PyTorch
+
+• https://github.com/pytorch/ignite
+
+• Pros:
+• PyTorch 공식라이브러리
+(e.g.�lightening은 공식라이브러리가아님)
+
+• Call-back�함수를위한 event가 잘정의되어있다.
+• 손쉬운학습통계 logging
+
+• Cons:
+• 진입장벽존재
+• 기본설계의아쉬움
+
+
+
+
+Events�for�Call-back
+
+Iteration 시작
+
+Feed-forward
+
+Loss 계산
+
+Back-
+
+propagation
+
+Gradient 
+
+Descent 수행
+
+현재 상태 출력
+
+Iteration 종료
+
+Iteration 시작
+
+Feed-forward
+
+Loss 계산현재 상태 출력
+
+Iteration 종료
+
+Training Validation
+
+검증 Epoch�종료학습 Epoch�시작
+
+Best loss 여부 체크 모델 저장
+
+학습 Epoch�종료 검증 Epoch�시작
+
+
+
+Engine
+
+*출처 - Ignite�공식 documentation:�https://pytorch.org/ignite/engine.html
+
+Iteration 시작
+
+Feed-forward
+
+Loss 계산
+
+Back-
+
+propagation
+
+Gradient 
+
+Descent 수행
+
+현재 상태 출력
+
+Iteration 종료
+
+Training
+
+학습 Epoch�시작
+
+학습 Epoch�종료
+
+process_function
+사용자가직접코딩
+
+*ignite.engine.create_supervised_trainer함수를통해코딩없이도사용가능
+(https://pytorch.org/ignite/engine.html#ignite.engine.create_supervised_trainer)
+
+
+
+
+
+Attach�Metrics
+
+• process_function의 return�값(e.g.�tuple)을 활용
+
+
+
+Add�Event�Handler�(Call-back�function)
+
+add_event_handler 함수 활용
+• call-back�함수의인터페이스가복잡할때
+
+decorator 활용
+• call-back 함수의인터페이스가표준을따를때
+
+
+
+Basic�Strategy
+
+Run�Train�Engine
+
+process_function
+
+EPOCH_COMPLETED
+Print�Statistics
+
+EPOCH_COMPLETED
+Run�Validation�Engine
+
+process_function
+
+EPOCH_COMPLETED
+Print�Statistics
+
+EPOCH_COMPLETED
+Check�Best�Loss
+
+EPOCH_COMPLETED
+Save�Best�Model
+
+DataLoader DataSet
+
+__init__
+
+__len__
+
+__getitem__
+
+

@@ -1,0 +1,37 @@
+
+Gradient�Clipping
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Back-propagation�Through�Time�(BPTT)
+
+• BPTT 알고리즘에따라, time-step이 많아질수록 gradient의 덧셈이많아짐
+• 즉, 긴 시퀀스의경우 gradient가 커질것
+
+• 따라서시퀀스의길이에따라적절한 learning�rate의 크기가바뀔수있음
+
+
+
+Intuitive�Explanation
+
+𝜃!"# = 𝜃 − 𝛼∇$ℒ 𝜃
+𝜃!"# = 𝜃 − 𝛼∇$ ℒ 𝜃𝑘
+
+by�gradient�clipping
+
+∇!ℒ 𝜃 "𝜏 = 𝑘
+
+
+
+Summary
+
+• 시퀀스의길이에따라, gradient의 크기가달라질수있음
+• Gradient�clipping을 통해 gradient�exploding을 예방하고문제를해결
+
+• Adam�optimizer를 사용할경우큰필요가없음
+
+

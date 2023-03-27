@@ -1,0 +1,77 @@
+
+Information�and�
+Entropy
+
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Information
+
+• 본디, 통신이나압축을위해주로다루어지던분야
+• Representation�learning에 관해서다루다보니자연스럽게연결됨
+
+• 불확실성(Uncertainty)을 나타내는값
+
+𝐼 x = − log 𝑃 x
+
+
+
+Examples
+
+1. 올 여름대한민국의평균여름기온은 26도입니다.
+
+2. 올 여름대한민국의평균여름기온은 8도입니다.
+
+1. 내일아침해는동쪽하늘에서뜹니다.
+
+2. 내일아침해는서쪽하늘에서뜹니다.
+
+
+
+Entropy
+
+• 정보량의기대값(평균)
+• 분포의평균적인 uncertainty를 나타내는값
+
+• 분포의형태를예측해볼수있음𝐻 𝑃 = −𝔼!~# ! log 𝑃 𝑥
+
+
+
+Cross�Entropy
+
+• 분포 𝑃의관점에서본분포 𝑄의정보량의평균
+• 두분포가비슷할수록작은값을가진다.𝐻 𝑃,𝑄 = −𝔼!~# ! log𝑄 𝑥
+
+
+
+DNN�Optimization�using�Cross�Entropy
+
+• Classification�문제에서 Cross�Entropy�Loss를 사용하여최소화
+
+CE 𝑦!:#, (𝑦!:# = − 1𝑁-$%!# -&%!' 𝑦$,& log (𝑦$,&= − 1𝑁-$%!# 𝑦$) 1 log (𝑦$ ,where 𝑦!:# ∈ ℝ#×', (𝑦!:# ∈ ℝ#×'.
+ℒ 𝜃 = −𝔼+~- + 𝔼.~- .|+ log 𝑃 𝑦|𝑥; 𝜃≈ − 1𝑁 1 𝑘-$%!# -&%!0 log 𝑃 𝑦$,&|𝑥$; 𝜃≈ − 1𝑁-$%!# log 𝑃 𝑦$|𝑥$; 𝜃 , if 𝑘 = 1.= − 1𝑁-$%!# 𝑦$) 1 log (𝑦$
+
+
+
+KL-Divergence�and�Cross�Entropy
+
+• KL-Divergence와 Cross�Entropy를 𝜃로미분하면같다.
+KL 𝑝||𝑝1 = −𝔼+~2 x log 𝑝1 x𝑝 x= −H𝑝 𝑥 log 𝑝1 𝑥𝑝 𝑥 𝑑𝑥= −H𝑝 𝑥 log 𝑝1 𝑥 𝑑𝑥 + H𝑝 𝑥 log 𝑝 𝑥 𝑑𝑥= 𝐻 𝑝, 𝑝1 − 𝐻 𝑝
+
+∇!KL 𝑝||𝑝! = ∇!𝐻 𝑝, 𝑝! − ∇!𝐻 𝑝
+
+
+
+Summary
+
+• Objective:
+• 확률분포 𝑃(𝑥)로부터수집한데이터셋 𝐷를통해, 확률분포함수 𝑃(𝑦|𝑥)를근사하고싶다.
+
+• 확률분포함수신경망 𝑃!(𝑦|𝑥)를통해이를수행하자.
+• KL-Divergence(또는 Cross�Entropy)가 최소가되도록 gradient�descent 수행
+
+

@@ -1,0 +1,84 @@
+
+Probabilistic�Perspective:
+Introduction
+
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Again,�our�objective�is
+
+• 가상의함수를모사하여, 원하는출력값을반환하는신경망의파라미터를찾자.
+
+• 그래서우리는 Deep�Neural�Networks를 이야기할때,
+• Gradient�Descent
+• Back-propagation
+• Feature�Vector
+• and�blah�blah..
+
+• 이제는우리의생각을확장시켜야할때.
+
+
+
+• 아래의그림에대해서모두가같은대답을하지는않을것.
+
+• 우리의새로운목표: 확률분포를학습하는것
+
+이세상은확률에기반한다.
+
+0
+
+0.1
+
+0.2
+
+0.3
+
+0.4
+
+0.5
+
+0.6
+
+확
+률
+
+토끼 vs 오리
+
+토끼 오리 기타
+
+
+
+Before�vs�After
+
+Before:�함수를배우자
+
+• Deterministic target 값을예측
+
+After:�확률 분포함수를배우자
+
+• 수학적으로좀더설명가능함
+• 불확실성까지학습
+
+𝑥 "𝑦 𝑥 "𝑦
+𝑦𝑦
+
+
+
+Summary
+
+• Neural�Networks는 확률분포함수를모델링할수있음
+• 이를통해가상의확률분포함수 𝑃(𝑦|𝑥)를근사(approximation)할 것
+
+• 대부분의최신기술들은이관점에기반을두고만들어짐
+
+• DNN을확률분포로보았을때, 가능한이론들에대해서앞으로이야기할것
+• Likelihood
+• Maximum�Likelihood�Estimation�(MLE)
+• Maximum�A�Posterior�(MAP)�Estimation
+• Cross�Entropy�&�KL-Divergence
+
+

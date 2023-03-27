@@ -1,0 +1,97 @@
+
+Exercise�Briefing:
+Transfer�Learning
+
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+What�we�will�learn
+
+• Binary�Classification:�Cat�vs�Dog
+
+• #�Samples:�25,000
+• #�Cat:�12,500
+• #�Dog:�12,500
+
+$�python�set_dataset.py
+
+vs
+
+
+
+Transfer�Learning�Overview
+
+Model
+
+Data�Loader
+
+Data
+
+train.py
+
+Trainer
+
+weight�parameters
+
+ImageNet
+
+Model
+
+Download
+
+Loa
+d�pr
+
+ede
+fine
+
+d
+
+arch
+itec
+
+ture
+
+Pretraining
+
+Contributors
+
+
+
+Result
+
+0.00E+00
+
+2.00E-01
+
+4.00E-01
+
+6.00E-01
+
+8.00E-01
+
+1.00E+00
+
+1.20E+00
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+
+Lo
+ss
+
+Epoch
+
+Loss based on different Weight Parameter Initialization and Freezing setup
+
+Random Init Random Init Pretrained Pretrained Freezed Freezed
+
+실선: train�loss
+점선: valid�loss
+
+Valid�Accuracy:�0.8292 Valid�Accuracy:�0.9598 Valid�Accuracy:�0.9679
+
+

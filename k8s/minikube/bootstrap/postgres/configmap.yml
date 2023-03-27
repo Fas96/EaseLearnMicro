@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+data:
+  POSTGRES_DB: easelearn
+  POSTGRES_USER: easelearn
+  POSTGRES_PASSWORD: fasbhim

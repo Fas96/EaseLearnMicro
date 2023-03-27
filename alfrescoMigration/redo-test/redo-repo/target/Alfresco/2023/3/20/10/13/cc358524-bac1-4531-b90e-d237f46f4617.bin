@@ -1,0 +1,104 @@
+
+Application�of�RNNs
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Applications
+
+!" !# !$ !%
+&'
+
+!"
+&'" &'# &'$ &'%
+
+&'" &'# &'$ !" !# !$
+&'" &'# &'$
+
+&'" &'#&'(
+
+Many to One
+
+One to Many
+
+Many to Many
+
+!"
+&'" &'# &'$ &'%
+
+!# !$ !%
+
+NLG, Machine Translation
+
+POS Tagging, MRC
+
+Text Classification
+
+Architecture ApplicationsType
+
+
+
+Two�Approaches
+
+① Non-autoregressive�(Non-generative)
+• 현재상태가앞/뒤상태를통해정해지는경우
+
+• e.g.�Part�of�Speech�(POS)�Tagging,�Text�Classification
+• Bidirectional�RNN�사용권장
+
+① Autoregressive�(Generative)
+• 현재상태가과거상태에의존하여정해지는경우
+
+• e.g.�Natural�Language�Generation,�Machine�Translation
+• One-to-Many�case 해당
+• Bidirectional�RNN�사용불가!!!!
+
+
+
+Many�to�Many
+
+• e.g.�POS�Tagging
+
+𝑥! 𝑥" 𝑥# 𝑥$
+
+"𝑦! "𝑦" "𝑦# "𝑦$
+𝑦! 𝑦" 𝑦# 𝑦$ ℒ 𝜃 ='%&!' "𝑦% − 𝑦%
+
+
+
+Many�to�One
+
+• e.g.�Text�Classification
+
+𝑥! 𝑥" 𝑥# 𝑥$
+
+"𝑦
+𝑦 ℒ 𝜃 = "𝑦 − 𝑦
+
+
+
+One�to�Many
+
+• e.g.�Natural�Language�Generation
+
+𝑥
+
+"𝑦! "𝑦" "𝑦# "𝑦$
+
+
+
+One�to�Many�(Sequence-to-Sequence)
+
+• e.g.�Machine�Translation
+
+𝑦(
+
+"𝑦! "𝑦" "𝑦# "𝑦$
+
+𝑥! 𝑥" 𝑥# 𝑥$
+Encoder Decoder
+
+

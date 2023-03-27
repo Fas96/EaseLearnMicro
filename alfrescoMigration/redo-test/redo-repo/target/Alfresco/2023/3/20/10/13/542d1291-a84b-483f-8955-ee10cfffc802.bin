@@ -1,0 +1,51 @@
+
+Wrap-up
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Before�this�chapter,
+
+• Our�objective�is:
+• 우리의세계(머릿속)에 존재하는가상의함수를모사하자.
+
+• 주어진입력(𝑥)에 대해서원하는출력(𝑦)을 반환하도록,
+손실함수를최소화하는파라미터(𝜃)를 찾자.
+
+• Gradient�descent를 수행하기위해 back-propagation을 수행하자.
+
+
+
+Before�vs�After
+
+Before:�함수를배우자
+
+• Deterministic target 값을예측
+
+After:�확률 분포함수를배우자
+
+• 수학적으로좀더설명가능함
+• 불확실성까지학습
+
+𝑥 $𝑦 𝑥 $𝑦
+𝑦𝑦
+
+
+
+After�this�chapter,
+
+• Our�objective�is:
+• 우리의세계(머릿속)에 존재하는가상의확률분포함수를모사하자.
+
+• 확률분포 𝑃(𝑥)에서수집한입력데이터 𝑥에대해서
+원하는조건부확률분포 𝑃(𝑦|𝑥)또는샘플링한출력데이터 𝑦를반환하도록,
+손실함수를최소화하는확률분포함수의파라미터(𝜃)를 찾자.
+
+• Maximum�Likelihood�Estimation
+
+• Gradient�descent를 수행하기위해 back-propagation을 수행하자.
+
+

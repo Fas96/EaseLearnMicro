@@ -1,0 +1,12 @@
+<webscript>
+   <shortname>GET rating</shortname>
+   <description><![CDATA[
+   Gets the list of R2ELN Authorities for the specified NodeRef.<br/>
+   ]]>
+   </description>
+   <url>/r2eln-api/node/{store_type}/{store_id}/{id}/authorities</url>
+   <format default="json" />
+   <authentication>user</authentication>
+   <transaction allow="readonly">required</transaction>
+   <lifecycle>internal</lifecycle>
+</webscript>

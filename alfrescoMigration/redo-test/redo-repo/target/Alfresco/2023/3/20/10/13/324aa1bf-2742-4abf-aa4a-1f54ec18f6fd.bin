@@ -1,0 +1,146 @@
+
+Wrap-up
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Before�this�class,
+
+• Our�objective�is:
+• 세상에존재하는어떤미지의함수를모사하자.
+
+• 주어진입력(𝑥)에 대해서원하는출력(𝑦)을 반환하도록,
+손실함수를최소화하는파라미터(𝜃)를 찾자.
+
+• Gradient�descent를 수행하기위해 back-propagation을 수행하자.
+
+
+
+After�this�class,
+• Our�objective�becomes:
+
+• 세상에존재하는어떤미지의확률분포함수를모사(approximate)하자.
+
+• +�Probabilistic�Perspective
+• 확률분포 𝑃(𝑥)와 𝑃(𝑦|𝑥)로부터데이터를수집하여,
+• 해당데이터를가장잘설명하는확률분포함수의파라미터(𝜃)를 찾자:�log 𝑃 𝑦|𝑥; 𝜃
+
+• Maximum�Likelihood�Estimation
+• Gradient�Descent�using�Back-propagation
+
+• 또는두확률분포를비슷하게만들자
+• Minimize�Cross�Entropy�(or�KL-Divergence)
+
+• +�Geometric�Perspective
+• 데이터란저차원의manifold에 분포하고있으며, 여기에약간의노이즈(𝜖)가 추가되어있는것
+
+• 노이즈란 task(𝑥 → 𝑦)에 따라서다양하게해석가능할것
+• 따라서해당manifold를 배울수있다면, 더낮은차원으로효율적인맵핑(or�project)이 가능
+
+• Non-linear�dimension�reduction
+
+• + Representation�Learning,�Again
+• 낮은차원으로의표현을통해,
+차원의저주(curse�of�dimensionality)를 벗어나효과적인학습이가능
+
+
+
+After�this�class,
+• Our�objective�becomes:
+
+• 세상에존재하는어떤미지의확률분포함수를모사(approximate)하자.
+
+• +�Probabilistic�Perspective
+• 확률분포 𝑃(𝑥)와 𝑃(𝑦|𝑥)로부터데이터를수집하여,
+• 해당데이터를가장잘설명하는확률분포함수의파라미터(𝜃)를 찾자:�log 𝑃 𝑦|𝑥; 𝜃
+
+• Maximum�Likelihood�Estimation
+• Gradient�Descent�using�Back-propagation
+
+• 또는두확률분포를비슷하게만들자
+• Minimize�Cross�Entropy�(or�KL-Divergence)
+
+• +�Geometric�Perspective
+• 데이터란저차원의manifold에 분포하고있으며, 여기에약간의노이즈(𝜖)가 추가되어있는것
+
+• 노이즈란 task(𝑥 → 𝑦)에 따라서다양하게해석가능할것
+• 따라서해당manifold를 배울수있다면, 더낮은차원으로효율적인맵핑(or�project)이 가능
+
+• Non-linear�dimension�reduction
+
+• + Representation�Learning,�Again
+• 낮은차원으로의표현을통해,
+차원의저주(curse�of�dimensionality)를 벗어나효과적인학습이가능
+
+
+
+After�this�class,
+• Our�objective�becomes:
+
+• 세상에존재하는어떤미지의확률분포함수를모사(approximate)하자.
+
+• +�Probabilistic�Perspective
+• 확률분포 𝑃(𝑥)와 𝑃(𝑦|𝑥)로부터데이터를수집하여,
+• 해당데이터를가장잘설명하는확률분포함수의파라미터(𝜃)를 찾자:�log 𝑃 𝑦|𝑥; 𝜃
+
+• Maximum�Likelihood�Estimation
+• Gradient�Descent�using�Back-propagation
+
+• 또는두확률분포를비슷하게만들자
+• Minimize�Cross�Entropy�(or�KL-Divergence)
+
+• +�Geometric�Perspective
+• 데이터란저차원의manifold에 분포하고있으며, 여기에약간의노이즈(𝜖)가 추가되어있는것
+
+• 노이즈란 task(𝑥 → 𝑦)에 따라서다양하게해석가능할것
+• 따라서해당manifold를 배울수있다면, 더낮은차원으로효율적인맵핑(or�project)이 가능
+
+• Non-linear�dimension�reduction
+
+• + Representation�Learning,�Again
+• 낮은차원으로의표현을통해,
+차원의저주(curse�of�dimensionality)를 벗어나효과적인학습이가능
+
+
+
+After�this�class,
+• Our�objective�becomes:
+
+• 세상에존재하는어떤미지의확률분포함수를모사(approximate)하자.
+
+• +�Probabilistic�Perspective
+• 확률분포 𝑃(𝑥)와 𝑃(𝑦|𝑥)로부터데이터를수집하여,
+• 해당데이터를가장잘설명하는확률분포함수의파라미터(𝜃)를 찾자:�log 𝑃 𝑦|𝑥; 𝜃
+
+• Maximum�Likelihood�Estimation
+• Gradient�Descent�using�Back-propagation
+
+• 또는두확률분포를비슷하게만들자
+• Minimize�Cross�Entropy�(or�KL-Divergence)
+
+• +�Geometric�Perspective
+• 데이터란저차원의manifold에 분포하고있으며, 여기에약간의노이즈(𝜖)가 추가되어있는것
+
+• 노이즈란 task(𝑥 → 𝑦)에 따라서다양하게해석가능할것
+• 따라서해당manifold를 배울수있다면, 더낮은차원으로효율적인맵핑(or�project)이 가능
+
+• Non-linear�dimension�reduction
+
+• + Representation�Learning,�Again
+• 낮은차원으로의표현을통해,
+차원의저주(curse�of�dimensionality)를 벗어나효과적인학습이가능
+
+
+
+Conclusion
+
+• DNN은굉장히유연한(flexible)한 함수이기때문에다양한관점에서해석이가능
+
+• 따라서, 대부분의새롭게제시되는방법들은위의관점에서설계되고제안된것
+
+• 위의관점에서딥러닝을바라본다면, 훨씬쉽게이해할수있을것
+
+

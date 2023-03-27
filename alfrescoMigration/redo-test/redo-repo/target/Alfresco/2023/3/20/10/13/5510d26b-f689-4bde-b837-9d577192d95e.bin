@@ -1,0 +1,75 @@
+
+Hidden�Representation
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Review:�Autoencoders
+
+• 오토인코더(AE)는 압축과해제를반복하며특징추출을자동으로학습
+
+• 인코더로부터나온중간결과물(𝑧)은 입력(𝑥)에 대한 feature�vector이다.
+• Motivation:�feature�vector의 각차원은어떤의미를내포하고있을까?
+
+𝑧𝑥 #𝑥Encoder Decoder
+Bottleneck
+
+
+
+Review:�Autoencoders
+
+• 인코더의결과물 𝑧를 plot 하였을때, 비슷한샘플들은비슷한곳에위치함을확인
+• 이 plot이 뿌려진공간을 hidden(latent)�space라고부름
+
+• Input�space의 MNIST 샘플이 latent space에 embedding�된 것
+
+𝑧𝑥 Encoder
+
+
+
+Mapping�to�Hidden(Latent)�Space
+
+• 각레이어의결과물을 hidden�vector라고부름
+• 모두 feature�vector라고볼수있음
+
+𝑦𝑥 ℎ! ℎ"ℓ! ℓ" ℓ#
+
+
+
+Hidden(Latent)�Representation
+
+• Tabular�data의 feature�vector와 달리, hidden�vector는 해석이어려움
+• 해석하고자하는연구들이이어지고있으나, 아직갈길이멀다.
+
+• 하지만, 비슷한특징을가진샘플은비슷한 hidden�vector를 가질것!
+
+𝑦𝑥 ℎ! ℎ"ℓ! ℓ" ℓ#
+
+
+
+Image�Generation
+
+• 만약각차원이명확하게하나의의미를지닌다면,
+각 차원의숫자를조절하여원하는이미지를합성해낼수있을것.
+
+출처: https://towardsdatascience.com/understanding-latent-space-in-machine-learning-de5a7c687d8d
+
+
+
+Summary
+
+• Hidden�layer의 결과값들을 hidden vectors라 부르며,
+이들은샘플의 feature를 담고있음
+
+• 신경망(또는레이어)을 통과시키는것은
+입력공간(input�space)에서잠재공간(latent�space)로의맵핑과정
+
+• 고차원공간(high-dimensional�space)à저차원공간(lower-dimensional�space)
+
+• Hidden�representation을 해석하는것은매우어려움
+• 하지만비슷한샘플은비슷한 hidden�representation을 지닐것!
+
+

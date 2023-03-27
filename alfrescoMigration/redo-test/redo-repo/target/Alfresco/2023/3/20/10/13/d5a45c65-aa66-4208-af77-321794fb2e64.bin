@@ -1,0 +1,108 @@
+
+Transfer�Learning
+using�Backbone
+
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Feature�Extraction�in�each�Layer
+
+• 각 conv.�layer는 위치에따라,
+low-level�또는 high-level�feature를 추출하도록학습됨.
+
+• 따라서 ImageNet의 데이터14,197,122장를통해학습된네트워크(e.g.�VGGNet)는
+해당 task를 수행하기위한 feature�extraction 능력이있을것
+
+CNN�Block
+
+(𝑁 = 1, 𝐶 = 1,28,28) (32,14,14) (64,7,7) (128,4,4) (1, ℎ = 50) (1,10)
+CNN�Block CNN�Block CNN�Block
+
+(256,2,2)
+
+so
+ftm
+
+ax
+
+F
+C
+�Laye
+
+r
+
+F
+C
+�Laye
+
+r
+
+(512,1,1)
+
+CNN�Block
+
+
+
+Motivations
+
+• 데이터가다르더라도이미지를활용한 task에서는공통된 feature들이존재할것
+
+CelebA-HQ�DatasetFlower�image�Dataset
+
+
+
+Transfer�Learning이란?
+
+• Transfer�learning is�a�research�problem�in machine�learning
+that�focuses�on�storing�knowledge�gained�while�solving�one�problem
+and�applying�it�to�a�different�but�related�problem.
+
+Big�Dataset
+e.g.�ImageNet
+
+Target�
+Dataset
+
+Pretraining
+
+Fine-tuning
+
+Load�weights
+
+출처: 위키피디아(https://en.wikipedia.org/wiki/Transfer_learning)
+
+
+
+
+How�to
+
+1) Set�seed�weights�and�train�as�normal
+
+2) Fix�loaded�weights�and�train�unloaded�parts
+
+3) Train�with�different�learning�rate�on�each�part
+
+𝜃 = 𝜙,𝜓𝑥 "𝑦
+𝜙 𝜓
+
+#𝜓 "𝑦𝑥Big�Dataset
+e.g.�ImageNet
+
+Target�
+Dataset
+
+
+
+Summary
+
+• 큰데이터셋을통해미리훈련한네트워크를나의문제에재학습시키자.
+• 인터넷에공개되어있는많은네트워크들
+
+• Computer�Vision�이외의도메인(특히 NLP)에서도큰인기를끌고있음.
+• e.g.�BERT,�GPT
+
+

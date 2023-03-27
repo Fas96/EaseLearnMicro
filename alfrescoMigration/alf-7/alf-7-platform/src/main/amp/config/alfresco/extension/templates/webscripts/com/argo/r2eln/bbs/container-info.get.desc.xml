@@ -1,0 +1,10 @@
+<webscript>
+  <shortname>bulletin board info</shortname>
+  <description>get noderef for bulletin board</description>
+  <url>/r2eln/bbs/container/{bbsName}</url>
+  <format default="json">argument</format>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>internal</lifecycle>
+  <cache><never>true</never></cache>
+</webscript>

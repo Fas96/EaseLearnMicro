@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="eln:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Document Model for R2ELN Repository</description>
+    <author>SooMyung Lee</author>
+    <version>1.0</version>
+
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions -->
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+        <!-- Import Alfresco Content Domain Model Definitions -->
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+        <!-- Import Alfresco System Model Definitions -->
+        <import uri="http://www.alfresco.org/model/system/1.0" prefix="sys"/>
+    </imports>
+
+    <!-- Custom namespace for your domain -->
+    <namespaces>
+        <namespace uri="http://r2eln.argonet.co.kr/model/content/1.0" prefix="eln"/>
+    </namespaces>
+
+    <!-- ===============================================================================================================
+        Constraints, Types, and Aspects go here...
+        -->
+
+   <constraints>
+        <constraint name="eln:allowedNoteKinds" type="LIST">
+            <parameter name="allowedValues">
+                <list>
+                    <value>E</value>
+                    <value>P</value>
+					<value>X</value>
+                </list>
+            </parameter>
+        </constraint>
+        <constraint name="eln:allowedProjStatus" type="LIST">
+            <parameter name="allowedValues">
+                <list>
+                    <value>open</value>
+                    <value>closed</value>
+                </list>
+            </parameter>
+        </constraint>
+        <constraint name="eln:allowedNoteStatus" type="LIST">
+            <parameter name="allowedValues">
+                <list>
+                    <value>draft</value>
+                    <value>pending</value>
+                    <value>approved</value>
+                    <value>archiveFail</value>
+                    <value>exception</value>
+                    <value>archived</value>
+                </list>
+            </parameter>
+        </constraint>
+   </constraints>
+   
+  <types>
+      <type name="eln:project">
+         <title>ELN Project</title>
+         <parent>cm:folder</parent>
+         <properties>
+            <property name="eln:engTitle">
+               <title>Project Code</title>
+               <type>d:text</type>
+               <index enabled="true">
+                  <atomic>true</atomic>
+                  <stored>false</stored> 
+                  <tokenised>true</tokenised>
+                  <facetable>false</facetable>
+               </index>
+            </property>
+            <property name="eln:projCode">
+               <title>Project Code</title>
+               <type>d:text</type>
+               <index enabled="true">
+                  <atomic>true</atomic>
+                  <stored>false</stored> 
+                  <tokenised>false</tokenised>
+                  <facetable>true</facetable>
+               </index>
+            </property>
+            <property name="eln:leaderId">
+               <title>Project Leader Id</title>
+               <type>d:text</type>
+               <index enabled="true">
+                  <atomic>true</atomic>
+                  <stored>false</stored> 
+                  <tokenised>false</tokenised>
+                  <facetable>true</facetable>
+               </index>
+            </property>
+            <property name="eln:projStartDate">
+               <title>Project Start Date</title>
+               <type>d:date</type>
+               <index enabled="true">
+                  <atomic>true</atomic>
+                  <stored>false</stored> 
+                  <tokenised>false</tokenised>
+                  <facetable>true</facetable>
+               </index>
+            </property>
+            <property name="eln:projEndDate">
+               <title>Project End Date</title>
+               <type>d:date</type>
+               <index enabled="true">
+                  <atomic>true</atomic>
+                  <stored>false</stored> 
+                  <tokenised>false</tokenised>
+                  <facetable>true</facetable>
+               </index>
+            </property>
+            <property name="eln:projYear">
+               <title>Project Year</title>
+               <type>d:text</type>
+               <index enabled="true">
+                  <atomic>true</atomic>
+                  <stored>false</stored> 
+                  <tokenised>false</tokenised>
+                  <facetable>true</facetable>
+               </index>
+            </property>
+            <property name="eln:projStatus">
+               <title>Project Status</title>
+               <type>d:text</type>
+               <index enabled="true">
+                  <atomic>true</atomic>
+                  <stored>false</stored> 
+                  <tokenised>false</tokenised>
+                  <facetable>true</facetable>
+               </index>
+               <constraints>
+                  <constraint ref="eln:allowedProjStatus" />
+               </constraints>
+            </property>
+         </properties>
+      </type>
+      <type name="eln:note">
+         <title>ELN Note</title>
+         <parent>cm:folder</parent>
+         <properties>
+            <property name="eln:noteKind">
+               <title>Kind of Note</title>
+               <type>d:text</type>
+               <index enabled="true">
+                  <atomic>true</atomic>
+                  <stored>false</stored> 
+                  <tokenised>false</tokenised>
+                  <facetable>true</facetable>
+               </index>
+              <constraints>
+                  <constraint ref="eln:allowedNoteKinds" />
+              </constraints>
+            </property>
+            <property name="eln:noteNo">
+               <title>Number of Note</title>
+               <type>d:text</type>
+               <index enabled="true">
+                  <atomic>true</atomic>
+                  <stored>false</stored> 
+                  <tokenised>false</tokenised>
+                  <facetable>true</facetable>
+               </index>
+            </property>
+         </properties>
+      </type>
+      <type name="eln:authority">
+         <title>ELN View Authority</title>
+         <parent>sys:base</parent>
+         <properties>
+            <property name="eln:authPerson">
+               <title>person node ref</title>
+               <type>d:noderef</type>
+            </property>
+            <property name="eln:authPermission">
+               <title>Kind of permission</title>
+               <type>d:text</type>
+               <default>SiteConsumer</default>
+               <constraints>
+                   <constraint name="eln:authPermissionOptions" type="LIST">
+                       <parameter name="allowedValues">
+                           <list>
+                               <value>SiteConsumer</value>
+                               <value>SiteManager</value>
+                               <value>SiteCollaborator</value>
+                               <value>SiteContributor</value>
+                           </list>
+                       </parameter>
+                   </constraint>
+               </constraints>               
+            </property>
+            <property name="eln:downloadable">
+               <title>Download Authority</title>
+               <type>d:boolean</type>
+               <default>false</default>
+            </property>
+            <property name="eln:printable">
+               <title>Print Authority</title>
+               <type>d:boolean</type>
+               <default>false</default>
+            </property>
+            <property name="eln:shareDate">
+               <title>Shared Date</title>
+               <type>d:date</type>
+            </property>
+         </properties>        
+      </type>
+      
+    </types>
+
+    <aspects>
+    
+        <!--                       -->
+        <!--  People who join this project -->
+        <!--                       -->
+        <aspect name="eln:people">
+            <title>ELN Project People</title>
+            <associations>
+                <association name="eln:manager">
+                    <source>
+                        <mandatory>false</mandatory>
+                        <many>true</many>
+                    </source>
+                    <target>
+                        <class>cm:person</class>
+                        <mandatory>false</mandatory>
+                        <many>false</many>
+                    </target>
+                </association>
+
+                <association name="eln:participants">
+                    <source>
+                        <mandatory>false</mandatory>
+                        <many>true</many>
+                    </source>
+                    <target>
+                        <class>cm:person</class>
+                        <mandatory>false</mandatory>
+                        <many>true</many>
+                    </target>
+                </association>
+                
+            </associations>
+        </aspect>
+
+        <aspect name="eln:authorizable">
+            <title>Authorized People</title>
+            <associations>
+                <child-association name="eln:authMembers">
+                    <source>
+                        <mandatory>false</mandatory>
+                        <many>true</many>
+                    </source>
+                    <target>
+                        <class>eln:authority</class>
+                        <mandatory>false</mandatory>
+                        <many>true</many>
+                    </target>
+                </child-association>
+            </associations>
+        </aspect>
+               
+        <aspect name="eln:content">
+         <title>ELN Content</title>
+	      <properties>
+	         <property name="eln:noteStatus">
+	            <title>Note Status</title>
+	            <type>d:text</type>
+	            <default>draft</default>
+	            <index enabled="true">
+	               <atomic>true</atomic>
+	               <stored>false</stored> 
+	               <tokenised>false</tokenised>
+	               <facetable>true</facetable>
+	            </index>
+	            <constraints>
+	               <constraint ref="eln:allowedNoteStatus" />
+	            </constraints>
+	         </property>
+	        </properties>
+	        <associations>
+	           <association name="eln:archived">
+	              <source>
+	                 <mandatory>false</mandatory>
+	                 <many>false</many>
+	              </source>
+	              <target>
+	                 <class>cm:content</class>
+	                 <mandatory>false</mandatory>
+	                 <many>false</many>
+	              </target>
+	           </association>
+	        </associations>
+      	</aspect>
+      </aspects>    
+</model>

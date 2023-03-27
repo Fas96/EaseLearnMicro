@@ -1,0 +1,13 @@
+<alfresco-config area="mimetype-map">
+   
+   <config evaluator="string-compare" condition="Mimetype Map">
+      <mimetypes>
+
+         <mimetype mimetype="application/x-hwp" display="HWP mimetype">
+            <extension>hwp</extension>
+         </mimetype>
+
+      </mimetypes>
+   </config>
+   
+</alfresco-config>

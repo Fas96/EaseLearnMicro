@@ -1,0 +1,88 @@
+
+Feature�and�
+Feature�Vector
+
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+몽타주(Montage)
+
+• 범인의얼굴을특정하기위해서,�목격자들에게물어서나온특징들을합쳐만든것
+
+• 좋은단서
+• 뺨에큰붉은반점
+• 쳐진눈
+• 긴생머리
+
+• 나쁜단서
+• 눈이두개
+• 귀가두개
+• 검은색머리카락
+
+
+
+Feature(특징)
+• 샘플을잘설명하는특징
+
+• 사람을설명할때, 좋은특징:
+• Continuous:�나이, 키, 몸무게, 소득
+• Categorical:�성별, 직업, 거주지, 출신학교/학과
+
+• 나쁜특징 1: (생물분류학적) 종
+• 모두가호모사피엔스이므로구분할수없다.
+
+• 나쁜특징 2: 주민등록번호
+• Categorical�Value로 볼수있음
+• 전국민의수만큼memory가 필요할것
+• 주민등록번호만으로는 (알고보면일부특징이유사하여도)
+두사람의유사도를알수없음
+
+• 특징을통해우리는특정샘플을수치화할수있다.
+
+
+
+Feature in�Machine�Learning
+
+• MNIST Classification
+• 특정위치에곧은(휘어진) 선이얼마나있는가?
+• 특정위치에선이얼마나굵은가?
+• 특정위치에선이얼마나기울어져있는가?
+
+
+
+No�Need�of�Hand-crafted�Feature�in�Deep�Learning
+
+• Traditional�Machine�Learning
+• 사람이데이터를면밀히분석후, 가정을세움
+• 가정에따라전처리를하여 feature를 추출
+• 추출된 feature를 model에 넣어학습
+• 장점: 사람이해석하기쉬움
+• 단점: 사람이미처생각하지못한특징의존재가능성
+
+• Current�Deep�Learning
+• Raw 데이터에최소한의전처리(e.g.�scale)를 수행
+• 데이터를model에 넣어학습
+• 장점: 구현이용이함, 미처발견하지못한특징도활용
+• 단점: 사람이해석하기어려움
+
+
+
+Feature�Vector
+
+• 각특징들을모아서하나의 vector로 만든것
+• Tabular�Dataset의 각 row도이에해당
+
+• 각차원(dimension)은 어떤속성에대한 level을 나타냄
+• 각속성에대한 level이 비슷할수록비슷한샘플이라고볼수있음
+
+• 우리는 feature�vector를 통해샘플사이의거리(유사도)를 계산할수있음
+
+키 몸무게 나이 월소득 집평수 차배기량 월지출
+
+홍길동 175 70 35 432 24 1600 345
+
+

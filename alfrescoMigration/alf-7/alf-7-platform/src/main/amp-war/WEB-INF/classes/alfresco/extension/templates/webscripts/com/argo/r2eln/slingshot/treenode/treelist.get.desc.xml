@@ -1,0 +1,13 @@
+<webscript>
+  <shortname>r2eln-tree</shortname>
+  <description>Document List Component - treenode data webscript for kriss type eln</description>
+  <url>/r2eln/doclib/treelist/site/{site}/{container}/{path}</url>
+  <url>/r2eln/doclib/treelist/site/{site}/{container}</url>
+  <url>/r2eln/doclib/treelist/node/{store_type}/{store_id}/{id}/{path}</url>
+  <url>/r2eln/doclib/treelist/node/{store_type}/{store_id}/{id}</url>
+  <format default="json">argument</format>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>internal</lifecycle>
+  <cache><never>true</never></cache>
+</webscript>

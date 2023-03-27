@@ -1,0 +1,13 @@
+<webscript>
+   <shortname>DELETE authority</shortname>
+   <description><![CDATA[
+   Deletes the specified authority from the specified NodeRef.<br/>
+   The rated node is identified by the {store_type}/{store_id}/{id} part of the URL.<br/>
+   ]]>
+   </description>
+   <url>/r2eln-api/node/{store_type}/{store_id}/{id}/authority</url>
+   <format default="json" />
+   <authentication>user</authentication>
+   <transaction>required</transaction>
+   <lifecycle>internal</lifecycle>
+</webscript>

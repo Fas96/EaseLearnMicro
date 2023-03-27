@@ -1,0 +1,8 @@
+<webscript>
+   <shortname>Get Employee</shortname>
+   <description>Get the List of Emp</description>
+   <url>/r2eln-api/statistics-emp</url>
+   <format default="json">argument</format>
+   <authentication>user</authentication>
+   <transaction allow="readonly">required</transaction>
+</webscript>

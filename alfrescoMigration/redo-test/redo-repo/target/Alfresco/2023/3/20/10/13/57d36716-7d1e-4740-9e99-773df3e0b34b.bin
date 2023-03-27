@@ -1,0 +1,306 @@
+
+Convolutional�
+Neural�Networks:�
+
+Introduction
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Before�Deep�Learning,
+
+• Hand-crafted�feature (e.g.�edge) 추출후모델링
+
+
+
+Convolution�Operation
+
+• Convolution�filter가 입력(𝑥)에 대해서돌아가며동작
+
+
+
+Convolutional�Neural�Network
+
+kernel
+output
+
+input
+
+
+
+Convolutional�Neural�Network
+
+kernel
+output
+
+input
+
+
+
+Convolutional�Neural�Network
+
+kernel
+output
+
+input
+
+
+
+Convolutional�Neural�Network
+
+kernel
+output
+
+input
+
+
+
+Convolutional�Neural�Network
+
+kernel
+output
+
+input
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input
+
+pad
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+Convolutional�Neural�Network�(with�Pad)
+
+kernel
+output
+
+input + pad
+
+
+
+How�it�works�(intuitively)
+
+
+
+How�it�works�(intuitively)
+
+
+
+How�it�works�(intuitively)
+
+
+
+How�it�works�(intuitively)
+
+
+
+Input�&�Output�Channels
+
+#�input�channels
+
+#�output�channels
+=�#�kernels
+
+#�kernels
+
+e.g.�input�channels�of�color�image:�Red,�Green,�Blue
+
+
+
+Input�&�Output�Tensors
+
+• Input�Tensor�Shape • Output�Tensor�Shape
+
+(N,�C,�H,�W)
+
+
+
+입출력크기계산방법
+
+
+
+입출력크기계산방법 (+pad)
+
+
+
+Convolution�Layer의 특징
+
+• Feature의 위치에구애받지않는다.
+
+
+
+Convolution�Layer의 장점
+
+• 같은입출력을갖는 FC�Layer에 비해더적은 weight를 가진다.
+
+
+
+Convolution�Layer의 장점
+
+• 병렬계산구성이쉬우므로, GPU에서의연산이매우빠르다.
+
+
+
+Convolution�Layer의 단점
+
+• FC�Layer에 비해입출력크기가계산이까다로워, 네트워크구성이쉽지않다.
+
+
+
+Summary
+
+• 예전부터영상처리분야에서는 Convolution�Filter를 활용
+• 탐지하고자하는패턴에따라필터를손으로하나하나깎아구성
+
+• CNN은데이터셋의 𝑥와 𝑦의구성에따라자동으로탐지해야할패턴을추출
+• 따라서내부 kernel은 해당패턴을추출하기위한형태로자동으로구성됨
+
+• FC�Layer에 비해매우빠르고적은 weight�parameter를 가짐
+
+

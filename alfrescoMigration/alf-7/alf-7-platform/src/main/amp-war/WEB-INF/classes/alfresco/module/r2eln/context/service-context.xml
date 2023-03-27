@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+    	
+    http://www.apache.org/licenses/LICENSE-2.0
+    	
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<beans>
+
+   
+   <bean id="r2elnAuthorityService" class="com.argo.r2eln.repo.authority.AuthorityServiceImpl">
+        <property name="personService">
+            <ref bean="personService" />
+        </property>
+        <property name="nodeService">
+            <ref bean="nodeService"/>
+        </property>
+        <property name="permissionService">
+            <ref bean="permissionService"/>
+        </property>
+        <property name="behaviourFilter">
+            <ref bean="policyBehaviourFilter"/>
+        </property>
+    </bean>
+
+    <bean id="createFreeProjectService" class="com.argo.r2eln.repo.freeproject.CreateFreeProjectServiceImpl">
+        <property name="nodeService" ref="nodeService"/>
+        <property name="siteService" ref="siteService"/>
+        <property name="behaviourFilter" ref="policyBehaviourFilter"/>
+        <property name="personService" ref="personService"/>
+        <property name="permissionService" ref="permissionServiceImpl"/>
+    </bean>
+
+
+    <bean id="settingProjectProperty" class="com.argo.r2eln.repo.behavior.ProjectPropertySetting"
+    	  init-method="init">
+    	  <property name="nodeService">
+    	  	<ref bean="NodeService"/>
+    	  </property>
+    	  <property name="policyComponent">
+    	  	<ref bean="policyComponent"/>
+    	  </property>
+    </bean>
+
+       
+     <bean id="r2eln_actionResourceBundles" parent="actionResourceBundles">
+        <property name="resourceBundles">
+            <list>
+                <value>alfresco.module.r2eln.messages.elnactions</value>
+            </list>
+        </property>
+    </bean>
+    
+    <bean id="action-certify-archive" class="com.argo.r2eln.action.executer.CertifyArciveActionExecuter" 
+    	parent="action-executer"
+    	init-method="init">
+    	<property name="serviceRegistry" ref="ServiceRegistry"/>
+    	<property name="behaviourFilter" ref="policyBehaviourFilter"/>
+    	<property name="certiDir" value="${alfresco.certi.dir}"/>
+    	<property name="hostTimestampUrl" value="${timestamp.host.url}"/>
+    	<property name="workTimestampDir" value="${timestamp.work.dir}"/>
+    	<property name="hostPdfAddress" value="${pdf.host.address}"/>
+    	<property name="hostPdfPort" value="${pdf.host.port}"/>
+    </bean>
+
+</beans>

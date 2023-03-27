@@ -1,0 +1,9 @@
+<webscript>
+   <shortname>Delete the initial archive version</shortname>
+   <description>
+      Delete the initial archive version with the version label 0.1
+   </description>
+   <url>/r2eln/archive/{store_type}/{store_id}/{id}/initial-version</url>
+   <format default="json">argument</format>
+   <authentication>admin</authentication>
+</webscript>

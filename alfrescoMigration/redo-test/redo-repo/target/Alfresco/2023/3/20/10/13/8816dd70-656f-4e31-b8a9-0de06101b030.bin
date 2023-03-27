@@ -1,0 +1,86 @@
+
+Appendix:�Maximum�A�
+Posterior�Estimation
+
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Bayes�Theorem
+
+𝑃 ℎ 𝐷 = 𝑃 𝐷 ℎ 𝑃(ℎ)𝑃(𝐷)
+Posterior
+
+Evidence
+
+PriorLikelihood
+
+ℎ:�hypothesis𝐷:�Data
+
+
+
+Maximum�A�Posterior�(MAP)�Estimation�Example
+
+• 절도사건의범인은발자국을남겼습니다.
+• 신발사이즈 240일때, 범인은남자일까? 여자일까?
+
+• 지인중에신발사이즈가 240이었던사람들을떠올려보자..
+• 여자중에많을까? 남자중에많을까?
+
+• 그런데범행장소가군부대라면?
+
+𝑃(y|x = 240)
+𝑃(x = 240|y)
+
+𝑃 y = male > 𝑃 y = female
+
+
+
+Maximum�A�Posterior�(MAP)�Estimation�Example
+
+• Likelihood는 여자일가능성이높지만, Prior를 고려하였을때,
+범인은남자일가능성이높다.
+
+𝑃 y x=240 = 𝑃 x=240 y 𝑃(y)𝑃(x=240)
+𝑃 x=240 y = male 𝑃(y = male)𝑃(x=240) > 𝑃 x=240 y = female 𝑃(y = female)𝑃(x=240)
+
+
+
+MAP�Estimation
+
+• Find�#ℎ,�which�maximizes�posterior.'ℎ = argmax!∈ℋ 𝑃 ℎ|𝐷= argmax!∈ℋ 𝑃 𝐷|ℎ 𝑃 ℎ𝑃 𝐷= argmax!∈ℋ 𝑃 𝐷|ℎ 𝑃 ℎ
+
+
+
+Bayesian vs�Frequentist
+
+Frequentist�관점
+
+• 파라미터는최적화의대상
+• 현재까지의정보를바탕으로추정
+• Overfitting에 취약함
+
+Bayesian�관점
+
+• 파라미터또한 random�variable이며,
+prior�분포를따를것.
+
+• 미래의 uncertainty까지고려
+• Prior에 대한가정이필요 #𝜃 = argmax!∈# 𝑃 𝐷; 𝜃#𝜃 = argmax!∈# 𝑃 𝜃|𝐷= argmax!∈# 𝑃 𝐷|𝜃 𝑃 𝜃𝑃 𝐷= argmax!∈# 𝑃 𝐷|𝜃 𝑃 𝜃
+
+
+
+Summary
+
+• MAP를통해우리는 posterior를 최대화하는 hypothesis를 찾을수있음
+• 마찬가지로주어진데이터셋에대한 posterior를 최대화하는파라미터(𝜃)를 찾을수있음
+
+• Bayesian�관점에서는 prior에 대한가정을통해, 앞으로의 uncertainty까지고려
+• 이를통해 overfitting�등의문제도해결할수있음
+
+• Bayesian�Deep�Learning에 대한다양한시도들도이어지고있음
+
+

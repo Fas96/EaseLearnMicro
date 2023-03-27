@@ -1,0 +1,136 @@
+
+Review:
+Practical�Exercise
+
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+You�can�skip�this�class
+
+• 이클립은딥러닝입문반을수강하지않으신분들을위해제작되었습니다.
+
+• 만약딥러닝입문반의 Practical�Exercise�챕터를수강하신분들은
+이클립을 skip하셔도좋습니다.
+
+
+
+So�far,
+
+• Jupyter Notebook�위주의실습
+• 대량의실험(e.g.�hyper-parameter�튜닝)에 적합하지않음
+• 복잡한프로그램개발에적합하지않음
+
+• 실무에서는 Linux�Console�위주로진행됨
+• Python�script 파일실행시, argument�parsing을 통해 hyper-parameter�입력
+• TIP:�Screen을 활용하면 SSH�접속이끊어져도프로그램이종료되지않음
+
+
+
+In�the�previous�class,�we�had�a�session,
+
+• 기존의실무와거리가먼구현방식을떠나, 정말실무와같이구현해보자!
+
+• 필요모듈예시
+• model.py: Architecture가 정의된클래스
+• trainer.py: Model을 학습하기위한코드
+• dataloader.py:�데이터를불러와전처리를수행하고, 신경망에넣기좋은형태로변환
+• train.py: 사용자로부터 hyper-param을받아, Model과 Trainer, Loader를 선언하고학습
+• predict.py: 사용자로부터Model과 input을 받아, 추론을수행
+
+
+
+Typical�Deep�Learning�Training�/�Inference Design
+
+Model
+
+Model
+
+Data�Loader
+
+Data
+
+train.py
+
+predict.py
+Trainer
+
+test�sample
+
+test�result
+
+deploy
+
+*�학습때전처리가있었다면,
+같은전처리가수행되어야함
+
+*�RESTful�API�Server�등으로
+wrapping�할 수도있음
+
+
+
+Typical�Model�Training�Procedure
+
+Iteration 시작
+
+Feed-forward
+
+Loss 계산
+
+Back-
+
+propagation
+
+Gradient 
+
+Descent 수행
+
+현재 상태 출력
+
+Iteration 종료
+
+Iteration 시작
+
+Feed-forward
+
+Loss 계산현재 상태 출력
+
+Iteration 종료
+
+Training Validation
+
+Epoch�종료Epoch�시작
+
+Best loss 여부 체크 모델 저장
+
+
+
+Interaction�between�Trainer�and�Others
+
+Training
+
+Validation
+
+Epoch�종료Epoch�시작
+
+Trainer
+
+Train�Set Valid�Set Test�Set
+
+Model
+
+
+
+After�this�session,
+
+• PyTorch DataSet 클래스와 DataLoader 클래스를활용하도록개선
+
+• PyTorch Ignite를 활용하여학습코드개선
+
+• CNN,�RNN을활용하여MNIST�Classification�모델개선
+(마치형광등을빼고 LED�전구갈아끼우듯이)
+
+

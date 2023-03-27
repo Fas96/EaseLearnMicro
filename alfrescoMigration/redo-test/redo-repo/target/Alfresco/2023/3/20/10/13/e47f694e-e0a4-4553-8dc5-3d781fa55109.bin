@@ -1,0 +1,100 @@
+
+Deep�Neural�Network�
+with�MLE
+
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Before�we�start,
+
+• 모두같은표현
+
+𝑃! 𝑥 = 𝑃 𝑥; 𝜃 = 𝑃 𝑥|𝜃
+𝑃! 𝑦|𝑥 = 𝑃 𝑦|𝑥; 𝜃 = 𝑃 𝑦|𝑥, 𝜃
+
+
+
+Again,�our�objective�is
+
+• 데이터를넣었을때출력을반환하는가상의함수를모사하는것
+
+• 확률분포로부터샘플링하여데이터를넣었을때,
+확률분포를반환하는가상의함수를모사하는것
+
+• 출력분포에서샘플링하면원하는출력값을얻을수있다.
+
+• Example:�손 글씨가주어졌을때, 글씨의클래스의확률분포𝑃 c|𝑥 , where 𝑥~𝑃(x).
+
+
+
+Review:�Maximum�Likelihood�Estimation
+
+• 우리는가상의확률분포를모사하는확률분포의파라미터(𝜃)를 찾고싶다.
+• 목표확률분포로부터데이터를수집한후, 데이터를잘설명하는파라미터를찾자.
+
+• Likelihood�라는값을통해얼마나잘설명하는지알수있다.
+• Likelihood function은 𝜃를입력으로받아, 데이터들의 𝜃에대한확률값의곱을출력
+
+• Likelihood를 최대화하는파라미터를찾으면, 주어진데이터를가장잘설명한다.
+• Gradient�Ascent를 통해서찾자.𝜃 ← 𝜃 + 𝛼 % 𝜕ℒ 𝜃𝜕𝜃
+
+
+
+Parameters�for�Probability�Distribution
+
+• Bernoulli�Distribution
+
+• Gaussian�Distribution
+
+𝜃 = 𝑝
+𝜃 = 𝜇, 𝜎
+
+
+
+Parameters�for�Probability�Distribution
+
+• Parameter�for�Deep�Neural�Networks𝜃 = 𝑊!, 𝑏!,𝑊", 𝑏", ⋯ ,𝑊ℓ, 𝑏ℓ
+
+𝑊! 𝑊" 𝑊#ℎ! ℎ"
+𝑥 &𝑦
+
+마찬가지로 Gradient�Ascent를 통해
+Likelihood를 최대로하는파라미터(𝛉)를 찾을수있다!
+
+
+
+Negative�Log�Likelihood�(NLL)
+
+• 하지만대부분의딥러닝프레임워크들은 Gradient�Descent만 지원
+
+• 따라서maximization�문제에서minimization�문제로접근
+
+𝜃 ← 𝜃 − 𝛼 % 𝜕ℒ 𝜃𝜕𝜃
+
+
+
+Deep�Neural�Networks�with�MLE
+
+• 분포 𝑃 x 로부터샘플링한데이터 𝑥가주어졌을때,
+파라미터 𝜃를갖는 DNN은조건부확률분포를나타낸다.
+
+• 이때, 우리는 Gradient�Descent를 통해 NLL을 최소화하는 𝜃를찾을수있다.𝑃 y|𝑥; 𝜃 , where 𝑥~𝑃 x .
+7𝜃 = argmin!∈# >$%&' − log𝑃 𝑦$|𝑥$; 𝜃
+
+
+
+Summary
+
+• MLE를통해수집한데이터셋을잘설명하는확률분포의파라미터를찾을수있음
+
+• Neural�Networks 또한확률분포함수이므로, MLE를 통해파라미터를찾을것
+• 최대화대신최소화를위해 Negative�Log-Likelihood�(NLL)을 Gradient�Descent.
+
+• Gradient�Descent를 수행하기위해선, 파라미터에대한미분이필요함
+• 이를효율적으로수행하기위해 back-propagation을 활용
+
+

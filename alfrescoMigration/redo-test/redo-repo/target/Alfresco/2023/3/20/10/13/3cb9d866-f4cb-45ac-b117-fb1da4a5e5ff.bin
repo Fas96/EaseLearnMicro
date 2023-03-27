@@ -1,0 +1,55 @@
+
+Recurrent�Neural�
+Networks
+
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+• e.g.�Tabular�Data,�Image • e.g.�Sequential�Data,�Time-series
+
+Recurrent�Neural�Networks
+
+Previous�methods Recurrent�Neural�Networks
+
+𝑥 𝑦 𝑥! ℎ!
+
+𝑦
+
+
+
+Sequential�Data�vs�Time�Series
+
+Time Series
+• 주식데이터
+• 센서데이터
+
+Sequential Data
+• 텍스트
+• (샘플링주기가일정한) 영상/음성
+
+• Time-stamp의유무에따른차이
+• 시퀀셜데이터는데이터의순서정보가매우중요함
+
+• e.g. 텍스트문장: 단어의순서
+• 추가로시계열데이터는해당데이터가발생한시각정보가매우중요함
+
+• e.g.�주식데이터: 가격의순서및발생시점
+
+
+
+RNN, 더이상어려워하지말자!
+
+• 시간(순서) 개념이추가되니어려움을느낄수있음
+• Generation�task가 아니면사실시간개념을구현에넣을필요없음
+• 일단입/출력텐서의모양만알아도이미반은해결
+
+• Back-propagation이 어렵다?
+• 수식을몰라도기본원리만기억하자
+
+• Step-by-step으로접근하면많은 variation에 대해서도해결됨
+
+

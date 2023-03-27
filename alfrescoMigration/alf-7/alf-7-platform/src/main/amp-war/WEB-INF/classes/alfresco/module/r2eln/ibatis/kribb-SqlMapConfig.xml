@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <settings>
+        <setting name="safeResultHandlerEnabled" value="false"/>
+    </settings>
+
+    <typeAliases>
+    
+        <!-- General -->
+        <typeAlias alias="hmap" type="java.util.HashMap"/>
+        
+    </typeAliases>
+    
+    <typeHandlers> 
+        <typeHandler javaType="java.io.Serializable" jdbcType="BLOB" handler="org.alfresco.ibatis.SerializableTypeHandler"/>
+        <typeHandler javaType="_byte[]" jdbcType="BLOB" handler="org.alfresco.ibatis.ByteArrayTypeHandler"/>
+    </typeHandlers>
+        
+    <mappers>
+        <!-- Activities -->
+        <mapper resource="alfresco/module/r2eln/ibatis/#resource.dialect#/kribb-common-SqlMap.xml"/>
+    </mappers>
+    
+</configuration>

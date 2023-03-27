@@ -1,0 +1,119 @@
+
+Basic�Statistics
+Ki Hyun Kim
+
+nlp.with.deep.learning@gmail.com
+
+
+
+
+Random�Variable & Probability�Distribution
+
+• 어떤변수 x가 𝑥라는값을가질확률
+• 확률분포 (함수)
+
+• 입력: 확률변수 x
+• 출력: x가각값에해당될때에대한확률값
+
+
+
+Discrete�Probability�Distribution
+
+• 확률값의총합은 1
+
+• Probability�Mass�Function�(확률질량함수, PMF)
+
+
+
+Continuous�Probability�Distribution
+
+• Probability�Density�Function�(확률밀도함수, PDF)
+• 면적의합이 1
+• 함수값이 1보다클수있다.
+
+• 연속확률변수의경우, 어떤샘플이주어졌을때, 확률값을알수없다.
+
+
+
+Joint�Probability
+
+• 결합분포
+
+
+
+Conditional�Probability
+
+• 조건부확률분포
+
+• 좀더친해져야할형태
+
+
+
+Bayes�Theorem
+
+• 데이터 𝐷가주어졌을때, 가설 ℎ의확률
+
+
+
+Function?�or�Value?
+
+• 확률값
+
+• 확률분포함수
+
+• 그럼아래의것들은?
+
+
+
+Monti-Hall�Problem
+
+• Random�Variables
+• A:�a�door�index�what�I�selected�at�the�first�time.
+• B:�a�door�index�what�host�selected.�Host�will�not�open�the�answer.
+• C:�a�door�index�of�the�answer.
+
+
+
+Monty-hall�Problem
+
+
+
+Monty-hall�Problem
+
+
+
+Monty-hall�Problem
+
+
+
+Marginal�Distribution
+
+• 결합분포에서한변수를적분한형태
+
+
+
+Expectation�and�Sampling
+
+• 앞으로자주보게될수식
+
+• 이것을전개해보면,
+
+
+
+Example:�Rolling�a�Dice
+
+• 주사위의기대값은?
+
+
+
+Also,�we�can�do�this
+
+• 이수식을해석해볼까요?
+
+
+
+Monte-Carlro
+
+• 확률분포로부터샘플링을통해 𝑓의가중평균을구해보자
+
+

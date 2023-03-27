@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f7c8ef7f-015c-4719-beca-100d11811795" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.13/spring-web-5.3.13.jar!/org/springframework/web/client/RestTemplate.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="docker-desktop" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="nonRecursive" value="true" />
+        <option name="useMavenConfig" value="true" />
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="build-docker-image" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2MuprwQ4FsYJOO2jyxX1NZRdFz4" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/fasbhim/Documents/Personal/2023/EaseLearnMicro/alfrescoMigration/alf-7&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;ce76b9e7f91b1173ee883404dad1b382&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redshift&quot;,
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/alfrescoMigration/alf-7" />
+      <recent name="$PROJECT_DIR$/alfrescoMigration/alf_data" />
+      <recent name="$PROJECT_DIR$/alfrescoMigration/alf-7/alf-7-platform/src/main/amp-war" />
+      <recent name="$PROJECT_DIR$/alfrescoMigration/alf-7/alf-7-platform/src/main/amp" />
+      <recent name="$PROJECT_DIR$/alfrescoMigration/alf-7/alf-7-platform/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/alfrescoMigration/r2elnTest" />
+      <recent name="$PROJECT_DIR$/alfrescoMigration/alf-7/alf-7-platform/src/main/java/com/argo" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/alfrescoMigration/alf_data" />
+      <recent name="$PROJECT_DIR$/alfrescoMigration/redo-alf_data" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.easelearn.customer.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CustomerApplication">
+    <configuration default="true" type="LiferayDockerServerConfiguration" factoryName="Liferay Docker Server">
+      <option name="passParentEnvironments" value="true" />
+      <option name="workspaceLocation" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="apigw" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.easelearn.apigw.ApiGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.easelearn.apigw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="customer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.easelearn.customer.CustomerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.easelearn.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Customer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.easelearn.customer.CustomerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EaseLearnMicroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="EaseLearnMicro" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.easelearn.easelearnmicro.EaseLearnMicroApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.easelearn.eurekaserver.EurekaServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.easelearn.eurekaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FraudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="fraud" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.easelearn.fraud.FraudApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.easelearn.fraud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.easelearn.notification.NotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.CustomerApplication" />
+      <item itemvalue="Spring Boot.EaseLearnMicroApplication" />
+      <item itemvalue="Spring Boot.NotificationApplication" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.CustomerApplication (2)" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.FraudApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CustomerApplication (2)" />
+        <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.ApiGatewayApplication" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7c8ef7f-015c-4719-beca-100d11811795" name="Changes" comment="" />
+      <created>1678627524246</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678627524246</updated>
+      <workItem from="1678627525339" duration="821000" />
+      <workItem from="1678628352997" duration="148000" />
+      <workItem from="1678628506439" duration="218000" />
+      <workItem from="1678628729331" duration="15000" />
+      <workItem from="1678628754056" duration="228000" />
+      <workItem from="1678628992438" duration="1307000" />
+      <workItem from="1678630307353" duration="2051000" />
+      <workItem from="1678632368196" duration="39000" />
+      <workItem from="1678632411937" duration="123000" />
+      <workItem from="1678632543446" duration="55000" />
+      <workItem from="1678632621067" duration="428000" />
+      <workItem from="1678633059504" duration="7803000" />
+      <workItem from="1678641451477" duration="15000" />
+      <workItem from="1678641476290" duration="393000" />
+      <workItem from="1678668578540" duration="602000" />
+      <workItem from="1678669271689" duration="18120000" />
+      <workItem from="1678696760803" duration="91000" />
+      <workItem from="1678698054656" duration="2892000" />
+      <workItem from="1678704900915" duration="1859000" />
+      <workItem from="1678722061696" duration="1722000" />
+      <workItem from="1678723798358" duration="4626000" />
+      <workItem from="1678752510670" duration="598000" />
+      <workItem from="1678753755872" duration="1408000" />
+      <workItem from="1678755171736" duration="1376000" />
+      <workItem from="1678756652558" duration="21711000" />
+      <workItem from="1678788258012" duration="36000" />
+      <workItem from="1678788300633" duration="1215000" />
+      <workItem from="1678789524396" duration="654000" />
+      <workItem from="1678790184550" duration="818000" />
+      <workItem from="1678791008895" duration="177000" />
+      <workItem from="1678791189605" duration="153000" />
+      <workItem from="1678791346322" duration="1241000" />
+      <workItem from="1678793072510" duration="5090000" />
+      <workItem from="1678800648875" duration="1894000" />
+      <workItem from="1678802552284" duration="141000" />
+      <workItem from="1678802703122" duration="1258000" />
+      <workItem from="1678838890496" duration="598000" />
+      <workItem from="1678840170279" duration="573000" />
+      <workItem from="1678840748507" duration="1516000" />
+      <workItem from="1678847136462" duration="11529000" />
+      <workItem from="1678868977239" duration="6088000" />
+      <workItem from="1678925057888" duration="13000" />
+      <workItem from="1678927766102" duration="10264000" />
+      <workItem from="1678955829065" duration="4070000" />
+      <workItem from="1678963835714" duration="341000" />
+      <workItem from="1678964180683" duration="433000" />
+      <workItem from="1678964618974" duration="10000" />
+      <workItem from="1678964639794" duration="12014000" />
+      <workItem from="1679007826238" duration="26013000" />
+      <workItem from="1679099754528" duration="29428000" />
+      <workItem from="1679234747341" duration="2303000" />
+      <workItem from="1679238983986" duration="1955000" />
+      <workItem from="1679241006529" duration="456000" />
+      <workItem from="1679269993288" duration="29106000" />
+      <workItem from="1679373427339" duration="1628000" />
+      <workItem from="1679375173398" duration="11288000" />
+      <workItem from="1679395703459" duration="10546000" />
+      <workItem from="1679443318753" duration="2107000" />
+      <workItem from="1679448722369" duration="14411000" />
+      <workItem from="1679485042617" duration="4228000" />
+      <workItem from="1679533039328" duration="11057000" />
+      <workItem from="1679551604088" duration="3652000" />
+      <workItem from="1679640446669" duration="50000" />
+      <workItem from="1679891773779" duration="650000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/notification/src/main/java/com/easelearn/notification/NotificationController.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

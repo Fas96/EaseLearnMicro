@@ -1,0 +1,142 @@
+version: '3.1'
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    user: postgres
+    environment:
+      POSTGRES_USER: easelearn
+      POSTGRES_PASSWORD: fasbhim
+      POSTGRES_HOST: host.docker.internal
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    depends_on:
+      - postgres
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    ports:
+      - "5050:80"
+    networks:
+      - postgres
+    restart: unless-stopped
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - spring
+    restart: unless-stopped
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitmq
+    networks:
+        - spring
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+        - ~/.rabbitmq/rabbitmq/data/:/var/lib/rabbitmq
+        - ~/.rabbitmq/log:/var/log/rabbitmq
+  eureka-server:
+      image: fas96/eureka-server:latest
+      container_name: eureka-server
+      hostname: eureka-server
+      ports:
+        - "8761:8761"
+      environment:
+        - SPRING_PROFILES_ACTIVE=docker
+      extra_hosts:
+        - "host.docker.internal:host-gateway"
+      networks:
+        - spring
+      depends_on:
+        - zipkin
+  apigw:
+    image: fas96/apigw:latest
+    container_name: apigw
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+    depends_on:
+      - zipkin
+      - eureka-server
+  customer:
+    image: fas96/customer:latest
+    container_name: customer
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - postgres
+      - rabbitmq
+  fraud:
+    image: fas96/fraud:latest
+    container_name: fraud
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - postgres
+      - rabbitmq
+  notification:
+    image: fas96/notification:latest
+    container_name: notification
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - postgres
+      - rabbitmq
+
+networks:
+  postgres:
+    driver: bridge
+  spring:
+    driver: bridge
+
+
+volumes:
+  postgres:
+  pgadmin:
+  rabbitmq:
+    driver: local
+    driver_opts:
+      type: none
+      device: /Users/fasbhim/Documents/Personal/2023/docker/volume/rabbitmq/
+      o: bind
