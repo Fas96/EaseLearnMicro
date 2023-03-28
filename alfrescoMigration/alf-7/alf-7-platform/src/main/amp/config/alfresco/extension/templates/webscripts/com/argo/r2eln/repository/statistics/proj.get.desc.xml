@@ -1,8 +1,0 @@
-<webscript>
-   <shortname>Get Project</shortname>
-   <description>Get the List of Project</description>
-   <url>/r2eln-api/statistics-proj</url>
-   <format default="json">argument</format>
-   <authentication>user</authentication>
-   <transaction allow="readonly">required</transaction>
-</webscript>

@@ -1,8 +1,0 @@
-<webscript>
-   <shortname>Get Timestamp</shortname>
-   <description>Get the List of Timestamp</description>
-   <url>/r2eln-api/timestamp</url>
-   <format default="json">argument</format>
-   <authentication>user</authentication>
-   <transaction allow="readonly">required</transaction>
-</webscript>

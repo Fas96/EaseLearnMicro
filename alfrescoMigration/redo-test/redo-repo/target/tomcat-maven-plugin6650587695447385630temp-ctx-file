@@ -1,5 +1,0 @@
-<Context path="/alfresco" reloadable="false" backgroundProcessorDelay="-1">
-  <Resources className="org.apache.naming.resources.VirtualDirContext" extraResourcePaths="/=/Users/fasbhim/Documents/Personal/2023/EaseLearnMicro/alfrescoMigration/redo-test/redo-repo/target/amp/web,/Users/fasbhim/Documents/Personal/2023/EaseLearnMicro/alfrescoMigration/redo-test/redo-repo/target/amp-war"/>
-  <Loader searchVirtualFirst="true" className="org.apache.catalina.loader.VirtualWebappLoader" virtualClasspath="/Users/fasbhim/Documents/Personal/2023/EaseLearnMicro/alfrescoMigration/redo-test/redo-repo/target/classes;/Users/fasbhim/Documents/Personal/2023/EaseLearnMicro/alfrescoMigration/redo-test/redo-repo/target/amp/config;/Users/fasbhim/Documents/Personal/2023/EaseLearnMicro/alfrescoMigration/redo-test/redo-repo/target/test-classes"/>
-  <JarScanner scanAllDirectories="true"/>
-</Context>

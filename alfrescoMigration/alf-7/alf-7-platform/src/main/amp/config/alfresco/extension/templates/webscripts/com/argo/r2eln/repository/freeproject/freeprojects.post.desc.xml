@@ -1,7 +1,0 @@
-<webscript>
-   <shortname>Create FreeProject</shortname>
-   <description>Create FreeProject</description>
-   <url>/r2eln-api/freeprojects</url>
-   <format default="json">argument</format>
-   <authentication>user</authentication>
-</webscript>

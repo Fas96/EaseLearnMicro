@@ -1,3 +1,0 @@
-{
-  "archiveNodeRef" : "${data.archiveNodeRef.nodeRef}"
-}

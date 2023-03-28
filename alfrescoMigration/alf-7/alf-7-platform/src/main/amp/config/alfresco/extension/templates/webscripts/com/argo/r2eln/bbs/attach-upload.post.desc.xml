@@ -1,9 +1,0 @@
-<webscript>
-  <shortname>BBS Attachement upload</shortname>
-  <description>Attachement Upload Component - bbs webscript</description>
-  <url>/r2eln/bbs/attach/upload</url>
-  <format default="json">argument</format>
-  <authentication>admin</authentication>
-  <transaction>required</transaction>
-  <lifecycle>internal</lifecycle>
-</webscript>

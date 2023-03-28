@@ -1,9 +1,0 @@
-<webscript>
-  <shortname>r2eln-yearlist</shortname>
-  <description>Document List v2 Component - yearlist data webscript</description>
-  <url>/r2eln/doclib2/yearlist/{type}/site/{site}/{container}/{path}</url>
-  <url>/r2eln/doclib2/yearlist/{type}/site/{site}/{container}</url>
-  <format default="json">argument</format>
-  <authentication>user</authentication>
-  <lifecycle>internal</lifecycle>
-</webscript>

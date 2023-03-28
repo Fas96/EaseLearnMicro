@@ -1,8 +1,0 @@
-<webscript>
-   <shortname>Get Dept</shortname>
-   <description>Get the List of Dept</description>
-   <url>/r2eln-api/statistics-dept</url>
-   <format default="json">argument</format>
-   <authentication>user</authentication>
-   <transaction allow="readonly">required</transaction>
-</webscript>

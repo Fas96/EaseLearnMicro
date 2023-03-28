@@ -1,8 +1,0 @@
-<webscript>
-   <shortname>Get Statistics</shortname>
-   <description>Get the List of Statistics</description>
-   <url>/r2eln-api/statistics</url>
-   <format default="json">argument</format>
-   <authentication>user</authentication>
-   <transaction allow="readonly">required</transaction>
-</webscript>

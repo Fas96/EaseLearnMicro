@@ -1,9 +1,0 @@
-<webscript>
-   <shortname>Certify and Archive content</shortname>
-   <description>
-      certify a selected node through the pdf converting server, and the archive it into the ELNArchiveSpace site.
-   </description>
-   <url>/r2eln/node/{store_type}/{store_id}/{id}/certify-archive</url>
-   <format default="json">argument</format>
-   <authentication>admin</authentication>
-</webscript>
