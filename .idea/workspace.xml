@@ -106,11 +106,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/k8s/services/notification" />
+      <recent name="$PROJECT_DIR$/k8s/services/fraud" />
       <recent name="$PROJECT_DIR$/alfrescoMigration/alf-7" />
       <recent name="$PROJECT_DIR$/alfrescoMigration/alf_data" />
       <recent name="$PROJECT_DIR$/alfrescoMigration/alf-7/alf-7-platform/src/main/amp-war" />
-      <recent name="$PROJECT_DIR$/alfrescoMigration/alf-7/alf-7-platform/src/main/amp" />
-      <recent name="$PROJECT_DIR$/alfrescoMigration/alf-7/alf-7-platform/src/main/java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/alfrescoMigration/r2elnTest" />
