@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7c8ef7f-015c-4719-beca-100d11811795" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/k8s/services/customer/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/services/customer/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/services/fraud/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/services/fraud/service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/services/notification/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/services/notification/service.yml" afterDir="false" />
+    <list default="true" id="f7c8ef7f-015c-4719-beca-100d11811795" name="Changes" comment="&quot;kube services&quot;">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,12 +292,49 @@
       <workItem from="1679551604088" duration="3652000" />
       <workItem from="1679640446669" duration="50000" />
       <workItem from="1679891773779" duration="1603000" />
-      <workItem from="1680012318027" duration="2229000" />
+      <workItem from="1680012318027" duration="2878000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;kube services&quot;">
+      <created>1680015814237</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680015814237</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;kube services&quot;">
+      <created>1680016002995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680016002995</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&quot;kube services&quot;">
+      <created>1680016050342</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680016050342</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;kube services&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;kube services&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
