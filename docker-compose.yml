@@ -84,8 +84,6 @@ services:
   customer:
     image: fas96/customer:latest
     container_name: customer
-    command:
-      - psql -h postgres -U easelearn -d fasbhim -f /docker-entrypoint-initdb.d/1.sql
     ports:
       - "8080:8080"
     environment:

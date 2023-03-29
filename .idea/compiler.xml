@@ -11,6 +11,7 @@
         <module name="clients" />
         <module name="amqp" />
         <module name="fraud" />
+        <module name="kafkaBroker" />
         <module name="eureka-server" />
         <module name="customer" />
       </profile>
@@ -29,6 +30,7 @@
       <module name="customer" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="fraud" options="-parameters" />
+      <module name="kafkaBroker" options="-parameters" />
       <module name="notification" options="-parameters" />
     </option>
   </component>
